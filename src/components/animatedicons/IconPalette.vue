@@ -1,9 +1,9 @@
 <template>
-  <svg 
+  <svg
     @click="movePalette"
-    xmlns="http://www.w3.org/2000/svg" 
-    width="100" 
-    height="100" 
+    xmlns="http://www.w3.org/2000/svg"
+    width="100"
+    height="100"
     viewBox="0 0 100 100"
     aria-labelledby="palette"
     role="presentation"
@@ -52,10 +52,10 @@ import { TimelineMax, Sine, Back } from 'gsap'
 
 export default {
   methods: {
-    movePalette() {
+    movePalette () {
       const tl = new TimelineMax()
 
-      //pick up here
+      // pick up here
       tl.add('start')
       this.mPalette(tl, this.$refs.light, -5)
       this.mPalette(tl, this.$refs.med, -15)
@@ -86,7 +86,7 @@ export default {
         'start+=0.7'
       )
     },
-    mPalette(tl, el, rot) {
+    mPalette (tl, el, rot) {
       tl.to(
         el,
         0.6,
@@ -99,7 +99,7 @@ export default {
         `start`
       )
     },
-    mPBack(tl, el) {
+    mPBack (tl, el) {
       tl.to(
         el,
         0.4,

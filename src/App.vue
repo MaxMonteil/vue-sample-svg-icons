@@ -1,11 +1,9 @@
 <template>
-  <div id="app">
-    <main>
-      <h1>Sample Vue.js SVG Icon System</h1>
-      <app-typography-icon />
-      <app-animated-icon />
-    </main>
-  </div>
+  <main id="app">
+    <h1>Sample Vue.js SVG Icon System</h1>
+    <app-typography-icon />
+    <app-animated-icon />
+  </main>
 </template>
 
 <script>
@@ -13,6 +11,7 @@ import AppTypographyIcon from './components/AppTypographyIcon'
 import AppAnimatedIcon from './components/AppAnimatedIcon'
 
 export default {
+  name: 'app',
   components: {
     AppTypographyIcon,
     AppAnimatedIcon
@@ -20,7 +19,7 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
 body,
 html {
   margin: 0;

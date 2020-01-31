@@ -4,7 +4,7 @@
     <p class="info">All found on <a href="https://icomoon.io/" target="_blank">Icomoon</a>, using the Vicons set</p>
     <p>
       <!--you can pass in a smaller width and height as props-->
-      <icon-base width="12" height="12" icon-name="write"><icon-write /></icon-base> 
+      <icon-base width="12" height="12" icon-name="write"><icon-write /></icon-base>
       <!--or you can use the default, which is 18-->
       <icon-base icon-name="write"><icon-write /></icon-base>
       <!--or make it a little bigger too :) -->
@@ -55,4 +55,3 @@ export default {
   }
 }
 </script>
-

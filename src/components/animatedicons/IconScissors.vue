@@ -1,9 +1,9 @@
 <template>
   <svg @click="startScissors"
-    xmlns="http://www.w3.org/2000/svg" 
+    xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 100 100"
-    width="100" 
-    height="100" 
+    width="100"
+    height="100"
     aria-labelledby="scissors"
     role="presentation"
     >
@@ -37,11 +37,11 @@ import { TweenMax, Sine } from 'gsap'
 
 export default {
   methods: {
-    startScissors() {
+    startScissors () {
       this.scissorAnim(this.$refs.rightscissor, 30)
       this.scissorAnim(this.$refs.leftscissor, -30)
     },
-    scissorAnim(el, rot) {
+    scissorAnim (el, rot) {
       TweenMax.to(el, 0.25, {
         rotation: rot,
         repeat: 3,
