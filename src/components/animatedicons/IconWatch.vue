@@ -1,9 +1,9 @@
 <template>
-  <svg 
+  <svg
     @click="watchStart"
-    xmlns="http://www.w3.org/2000/svg" 
-    width="90" 
-    height="90" 
+    xmlns="http://www.w3.org/2000/svg"
+    width="90"
+    height="90"
     viewBox="0 0 100 100"
     aria-labelledby="watch"
     role="presentation"
@@ -49,7 +49,7 @@ import { TimelineMax, Elastic, Circ } from 'gsap'
 
 export default {
   methods: {
-    watchStart() {
+    watchStart () {
       var tl = new TimelineMax()
 
       tl.to(this.$refs.hand, 2, {
