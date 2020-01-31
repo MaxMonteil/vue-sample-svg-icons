@@ -26,6 +26,8 @@ export default {
   inject: {
     components: {
       default: {
+        // Add new icons here using kebab-case keys:
+        // 'icon-name': () => import('./icons/IconFullMoon'),
         'box': () => import('./icons/IconBox'),
         'calendar': () => import('./icons/IconCalendar'),
         'envelope': () => import('./icons/IconEnvelope'),
